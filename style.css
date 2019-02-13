@@ -59,8 +59,8 @@ kbd {
 }
 
 
-/*----TEXT----*/
-#text-place{
+/*----Text----*/
+.text-place{
 	text-align: center;
 	margin-bottom: 50px;
 	font-size: 16px;
@@ -68,12 +68,14 @@ kbd {
 
 }
 
-.slidecontainer{
+/*----Slider----*/
+#slidecontainer{
   text-align: center;
   margin-top: 140px;
+  display: none;
 }
 
 .sound-level {
   color: #FFCC33;
-  font-size: 28px;
+  font-size: 28px;	
 }

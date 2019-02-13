@@ -10,20 +10,18 @@ window.addEventListener("keydown", function(e) {
 				var sounds = document.getElementsByTagName('audio');
  				for(i=0; i<sounds.length; i++) sounds[i].pause();
 
- 				text.innerHTML = ("Appuyez sur une touche de votre clavier (espace pour reset les sons)");	
+ 				text.innerHTML = ("Appuyez sur une touche de votre clavier pour découvrir le son et l'hisoire qu'il raconte");	
  			};
 
  		const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 
-		
-		
+ 		document.getElementById("slidecontainer").style.display = "block";
+
 		console.log(audio.volume);
 
 		text.innerHTML = audio.innerHTML;
 
 		console.log(text)
-
-
 
 		if(!audio) return;
 
@@ -49,8 +47,8 @@ window.addEventListener("keydown", function(e) {
 		var slider = document.getElementById("myRange");
 		var output = document.getElementById("lvl");
 		slider.oninput = function() {
-  		audio.volume = this.value/100;
-  		output.innerHTML = "Sound level : " + this.value + '%';
+		output.innerHTML = "Sound level : " + this.value + '%';
+  		audio.volume = this.value/100;	
 }
 	});
 

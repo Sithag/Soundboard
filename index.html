@@ -7,8 +7,8 @@
         </head>
     <body>
 
-    <span id="text-place">
-        <p id="text">Appuyez sur une touche de votre clavier (espace pour éteindre les sons)</p>
+    <span class="text-place">
+        <p id="text">Appuyez sur une touche de votre clavier pour découvrir le son et l'hisoire qu'il raconte</p>
     </span>
 
     <div class="keys">  
@@ -54,13 +54,14 @@
         
     </div>
 
-    <div class="slidecontainer">
+    <div id="slidecontainer">
         <div>
-                <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+            <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
         </div>
         <div>
-            <span class="sound-level" id="lvl">Régez le son en déplaçant le curseur</span>
+            <span class="sound-level" id="lvl">Sound level : 100%</span>
         </div>
+        <div><p class="text-place" id="stop">Appuyez sur espace pour éteindre les sons</p></div>
     </div>
 
   <audio data-key="83" src="sounds/1.mp3">Spoutnik 1, lancé le 4 octobre 1957 par l'URSS, est le premier engin placé en orbite autour de la Terre et marque le début de l'ère spatiale. Le "Bip-Bip" est le signal qui marque la première victorie spatiale de L'URSS sur les USA.</audio>
